@@ -1,10 +1,3 @@
-function onOpen() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var menuEntries = [{name: "Sort", functionName: "sort"}];
-
-  ss.addMenu("My Menu", menuEntries);
-}
-
 var sortOrder = ["Today","Week","Recent","Favorite","If","Future"];
 
 function sortByPinyin(valA, valB) {
